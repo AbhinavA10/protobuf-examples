@@ -1,0 +1,9 @@
+{
+    "python.pythonPath": "/home/abhinav/miniconda3/envs/env_proto/bin/python",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--load-plugins",
+        "pylint_protobuf"
+    ]
+}

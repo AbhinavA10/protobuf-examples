@@ -1,0 +1,22 @@
+syntax = "proto3";
+// Above line: defining the version of protobuf we are using
+package youtube_tutorial;
+// package name is ignored in python
+
+option optimize_for = SPEED; // already set by default
+
+// Define a new Employee type/schema
+message Employee {
+    // <type> <name> = unique id;
+    // id is serialization sequence. 
+    // Every property of the message needs to be labelled with the position of field
+    // This is how comptability is maintained, and how Protobuf can decode messages
+    int32 id = 1;
+    string name = 2;
+    float salary = 3;
+}
+
+message Employees {
+    // array of employees
+    repeated Employee employee = 1;
+} 
